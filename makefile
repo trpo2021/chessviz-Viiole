@@ -1,5 +1,5 @@
-Chess: main.cpp
-	g++ -Wall -Werror -o Chess main.cpp
+Chess.exe: main.cpp
+	g++ -Wall -Werror -o Chess.exe main.cpp
 
 run:
-	Chess.exe
+	./Chess.exe
