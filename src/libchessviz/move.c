@@ -11,7 +11,7 @@ int move(char board[][9], char moveChess[])
             return 2;
     }
 
-    j = moveChess[0] - '';
+    j = moveChess[0] - '`';
     i = moveChess[1] - '0';
 
     if (board[i][j] == 32) {
@@ -21,7 +21,7 @@ int move(char board[][9], char moveChess[])
     t = board[i][j];
     board[i][j] = 32;
 
-    j = moveChess[3] - '';
+    j = moveChess[3] - '`';
     i = moveChess[4] - '0';
 
     board[i][j] = t;
