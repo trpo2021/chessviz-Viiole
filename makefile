@@ -4,8 +4,8 @@ bin/chess: obj/src/chessviz/main.o obj/src/libchessviz/libchessviz.a obj/src/che
 obj/src/chessviz/main.o: src/chessviz/main.c
 	gcc -I src -Wall -Werror -c -o obj/src/chessviz/main.o src/chessviz/main.c
 
-obj/src/chessviz/board_read.o: src/chessviz/board_read.c
-	gcc -I src -Wall -Werror -c -o obj/src/chessviz/board_read.o src/chessviz/board_read.c
+obj/src/chessviz/board_read.o: src/libchessviz/board_read.c
+	gcc -I src -Wall -Werror -c -o obj/src/chessviz/board_read.o src/libchessviz/board_read.c
 
 obj/src/libchessviz/libchessviz.a: obj/src/libchessviz/board.o obj/src/libchessviz/board_print_plain.o obj/src/libchessviz/move.o
 	ar rcs obj/src/libchessviz/libchessviz.a obj/src/libchessviz/board.o obj/src/libchessviz/board_print_plain.o obj/src/libchessviz/move.o
