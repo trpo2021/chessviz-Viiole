@@ -5,7 +5,7 @@ int printBoard(char board[][9])
 {
     printf("\n");
 
-    for (int i = 9; i > -1; i--) {
+    for (int i = 8; i > -1; i--) {
         for (int j = 0; j < 9; j++) {
             if (board[i][j] == 0) {
                 board[i][j] = 32;
@@ -16,8 +16,6 @@ int printBoard(char board[][9])
 
         printf("\n");
     }
-
-    printf("\n-%d-\n", board[0][0]);
 
     return 0;
 }
